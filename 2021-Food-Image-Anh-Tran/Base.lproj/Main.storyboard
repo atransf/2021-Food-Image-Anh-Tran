@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_021_Food_Image_Anh_Tran" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiy-Vp-f4a">
+                                <rect key="frame" x="30" y="474" width="330" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eYq-Jn-Md7"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <string key="title">Order Pizza
+</string>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="orderPizzaButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UVU-Qk-wKk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3F-Ay-aa5">
+                                <rect key="frame" x="30" y="554" width="330" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="MLc-Yw-hRC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Order Burger"/>
+                                <connections>
+                                    <action selector="orderBurgerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MkA-It-ZLB"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tu8-Qv-BzC">
+                                <rect key="frame" x="30" y="84" width="330" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="v6K-7r-dgg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEf-Ip-ABf">
+                                <rect key="frame" x="30" y="334" width="330" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ud4-W0-lHd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tu8-Qv-BzC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="4DB-WI-y5V"/>
+                            <constraint firstItem="t3F-Ay-aa5" firstAttribute="top" secondItem="qiy-Vp-f4a" secondAttribute="bottom" constant="40" id="7cb-8P-QTN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tu8-Qv-BzC" secondAttribute="trailing" constant="30" id="D7h-4V-AZq"/>
+                            <constraint firstItem="qiy-Vp-f4a" firstAttribute="leading" secondItem="tu8-Qv-BzC" secondAttribute="leading" id="Gjg-1O-mN4"/>
+                            <constraint firstItem="nEf-Ip-ABf" firstAttribute="leading" secondItem="tu8-Qv-BzC" secondAttribute="leading" id="SK2-6k-FW2"/>
+                            <constraint firstItem="tu8-Qv-BzC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="WxR-WU-jK5"/>
+                            <constraint firstItem="nEf-Ip-ABf" firstAttribute="trailing" secondItem="tu8-Qv-BzC" secondAttribute="trailing" id="YR9-Eu-sII"/>
+                            <constraint firstItem="nEf-Ip-ABf" firstAttribute="top" secondItem="tu8-Qv-BzC" secondAttribute="bottom" constant="50" id="csP-LF-vtz"/>
+                            <constraint firstItem="qiy-Vp-f4a" firstAttribute="top" secondItem="nEf-Ip-ABf" secondAttribute="bottom" constant="40" id="dzS-WK-Zpd"/>
+                            <constraint firstItem="t3F-Ay-aa5" firstAttribute="leading" secondItem="tu8-Qv-BzC" secondAttribute="leading" id="eCF-9y-UZV"/>
+                            <constraint firstItem="qiy-Vp-f4a" firstAttribute="trailing" secondItem="tu8-Qv-BzC" secondAttribute="trailing" id="hsA-RZ-8BF"/>
+                            <constraint firstItem="t3F-Ay-aa5" firstAttribute="trailing" secondItem="tu8-Qv-BzC" secondAttribute="trailing" id="khl-yF-3A0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="foodImageView" destination="tu8-Qv-BzC" id="ePc-zl-7d3"/>
+                        <outlet property="messageLable" destination="nEf-Ip-ABf" id="MMH-4n-j4b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
